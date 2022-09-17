@@ -26,7 +26,7 @@ std::ofstream logs;
 
 /* True if file exists, otherwise false */
 bool fexists(char * path) {
-    if (auto file = fopen("demo.txt", "r")) {
+    if (auto file = fopen(path, "r")) {
         fclose(file);
         return true;
     }
@@ -124,7 +124,7 @@ void main() {
 
     data.getEntry("test.txt").readAsText();
 
-    auto config = data.getEntry("text.xdb");
+    auto config = data.getEntry("test.xdb");
     if (config.isNull()) {
         ERROR << "data/test.pak/test.xdb does not exist!";
         return;

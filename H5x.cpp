@@ -14,7 +14,7 @@ BOOL APIENTRY DllMain( HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpRese
 }
 
 auto loaded = false;
-/* This function is imported and executed by H5.exe at start. It sets up all the hooks. */
+/* This function is imported and executed by H5.exe at start of the game. */
 extern "C" __declspec(dllexport) bool TrackingCount(void* a, char* b, int c, int d) {
     if (!loaded) {
         loaded = true;
