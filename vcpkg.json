@@ -1,0 +1,9 @@
+{
+    "name": "h5x",
+    "version-string": "0.1.0",
+    "dependencies": [
+        "minhook",
+        "libzippp",
+        "pugixml"
+    ]
+}
